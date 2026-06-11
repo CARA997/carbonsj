@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern B2B website for activated carbon, filtration and purification products for global industrial applications.">
+  <title>Activated Carbon Solutions | Global Industrial Supplier</title>
+  <link rel="icon" href="assets/company-logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Home">
+        <span class="brand-mark"><img src="assets/company-logo.svg" alt=""></span>
+        <span class="brand-text" data-i18n="brandName">Shanghai Shengjin Enterprise Co., Ltd.</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
+        <a href="#home" data-i18n="nav.home">Home</a>
+        <a href="#company" data-i18n="nav.company">Company Profile</a>
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#catalog" data-i18n="nav.catalog">E-Catalog</a>
+        <a href="#applications" data-i18n="nav.applications">Applications</a>
+        <a href="#certificate" data-i18n="nav.certificate">Certificate</a>
+        <a href="#contact" data-i18n="nav.contact">Contact Us</a>
+      </nav>
+
+      <label class="language-control">
+        <span class="sr-only" data-i18n="languageLabel">Language</span>
+        <select id="language-select" aria-label="Language">
+          <option value="en">English</option>
+          <option value="zh">简体中文</option>
+          <option value="ko">한국어</option>
+          <option value="ja">日本語</option>
+        </select>
+      </label>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-anchor" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="eyebrow" data-i18n="hero.eyebrow">Industrial filtration materials</span>
+          <h1 data-i18n="hero.title">Reliable Activated Carbon Solutions for Global Industrial Applications</h1>
+          <p data-i18n="hero.subtitle">We provide customized activated carbon products for filtration, purification, environmental protection, and industrial treatment applications.</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#products" data-i18n="hero.productsBtn">View Products</a>
+            <a class="btn secondary" href="#contact" data-i18n="hero.contactBtn">Contact Us</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Activated carbon industrial material visual">
+          <div class="visual-panel">
+            <span class="carbon-dot dot-one"></span>
+            <span class="carbon-dot dot-two"></span>
+            <span class="carbon-dot dot-three"></span>
+            <div class="process-line"></div>
+            <div class="spec-card spec-a">
+              <strong data-i18n="hero.card1Title">Stable Supply</strong>
+              <span data-i18n="hero.card1Text">Export-ready industrial grades</span>
+            </div>
+            <div class="spec-card spec-b">
+              <strong data-i18n="hero.card2Title">Custom Specs</strong>
+              <span data-i18n="hero.card2Text">Particle size, iodine value, ash and moisture</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="profile section-anchor" id="company">
+      <div class="container split-layout">
+        <div>
+          <span class="section-kicker" data-i18n="about.kicker">Company Profile</span>
+          <h2 data-i18n="about.title">Focused on dependable filtration and purification materials</h2>
+        </div>
+        <div class="profile-copy">
+          <p data-i18n="about.p1">Shanghai Shengjin Enterprise Co., Ltd. specializes in activated carbon, activated carbon fiber and related filtration materials for industrial buyers, trading companies, environmental engineering firms and filtration system manufacturers.</p>
+          <p data-i18n="about.p2">We support customized specifications for different treatment conditions and help customers match material performance with water treatment, air purification, gas treatment, solvent recovery and chemical processing requirements.</p>
+          <p data-i18n="about.p3">Our work is built around quality control, steady communication, stable supply and long-term cooperation with overseas procurement teams.</p>
+        </div>
+      </div>
+      <div class="container metrics">
+        <div>
+          <strong data-i18n="about.metric1">Multi-industry</strong>
+          <span data-i18n="about.metric1Text">Solutions for environmental and process applications</span>
+        </div>
+        <div>
+          <strong data-i18n="about.metric2">Customizable</strong>
+          <span data-i18n="about.metric2Text">Grades, particle sizes and packing options</span>
+        </div>
+        <div>
+          <strong data-i18n="about.metric3">Export-focused</strong>
+          <span data-i18n="about.metric3Text">Documentation support for global buyers</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section-anchor" id="products">
+      <div class="container product-page-head">
+        <div class="breadcrumb-line">
+          <span data-i18n="products.breadcrumbHome">Home</span>
+          <span>»</span>
+          <strong data-i18n="products.breadcrumbProducts">Products</strong>
+        </div>
+        <div class="product-search" role="search">
+          <input type="search" data-i18n-attr="placeholder:products.searchPlaceholder" placeholder="Search products">
+          <button type="button" data-i18n="products.searchButton">Search</button>
+        </div>
+      </div>
+
+      <div class="container product-center-layout">
+        <aside class="product-sidebar" aria-label="Product categories">
+          <h2 data-i18n="products.categoryTitle">CATEGORY</h2>
+          <ul id="product-category-list"></ul>
+        </aside>
+
+        <div class="product-listing">
+          <h2 data-i18n="products.centerTitle">PRODUCTS CENTER</h2>
+          <div class="product-grid" id="product-grid" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog section-anchor" id="catalog">
+      <div class="container catalog-panel">
+        <div>
+          <span class="section-kicker" data-i18n="catalog.kicker">E-Catalog</span>
+          <h2 data-i18n="catalog.title">Download</h2>
+          <p data-i18n="catalog.intro">Download the PDF catalogue for activated carbon product information.</p>
+        </div>
+        <div class="catalog-actions">
+          <a class="btn primary" href="#contact" data-i18n="catalog.download">Download</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="applications section-anchor" id="applications">
+      <div class="container section-heading">
+        <span class="section-kicker" data-i18n="applications.kicker">Applications</span>
+        <h2 data-i18n="applications.title">Applications</h2>
+        <p data-i18n="applications.intro">Activated carbon application information can be confirmed according to product and process conditions.</p>
+      </div>
+      <div class="container application-grid" id="application-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="certificate section-anchor" id="certificate">
+      <div class="container split-layout">
+        <div>
+          <span class="section-kicker" data-i18n="certificate.kicker">Certificate</span>
+          <h2 data-i18n="certificate.title">Quality documentation for responsible sourcing</h2>
+          <p data-i18n="certificate.intro">We provide practical quality and export documentation support according to customer requirements and shipment conditions. Specific certificates and inspection documents should be confirmed during inquiry.</p>
+        </div>
+        <div class="certificate-list">
+          <article>
+            <div class="certificate-image">
+              <img src="assets/certificate-1.jpg" alt="" onerror="this.hidden=true">
+            </div>
+            <h3 data-i18n="certificate.item1">Quality Management</h3>
+          </article>
+          <article>
+            <div class="certificate-image">
+              <img src="assets/certificate-2.jpg" alt="" onerror="this.hidden=true">
+            </div>
+            <h3 data-i18n="certificate.item2">Product Testing</h3>
+          </article>
+          <article>
+            <div class="certificate-image">
+              <img src="assets/certificate-3.jpg" alt="" onerror="this.hidden=true">
+            </div>
+            <h3 data-i18n="certificate.item3">Export Documentation</h3>
+          </article>
+          <article>
+            <div class="certificate-image no-image"></div>
+            <h3 data-i18n="certificate.item4">Custom Inspection Support</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-anchor" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <span class="section-kicker" data-i18n="contact.kicker">Contact Us</span>
+          <h2 data-i18n="contact.title">Send your activated carbon inquiry</h2>
+          <p data-i18n="contact.intro">Share the product type, application, specification target and estimated quantity. Our team will prepare a response for your procurement review.</p>
+          <dl>
+            <div>
+              <dt data-i18n="contact.companyLabel">Company Name</dt>
+              <dd data-i18n="brandName">Shanghai Shengjin Enterprise Co., Ltd.</dd>
+            </div>
+            <div>
+              <dt data-i18n="contact.addressLabel">Address</dt>
+              <dd data-i18n="contact.address">C158, No. 1501 Zhangyang Road, Pudong New Area, Shanghai, China</dd>
+            </div>
+            <div>
+              <dt data-i18n="contact.emailLabel">Email</dt>
+              <dd><a href="mailto:xszhao163@163.com">xszhao163@163.com</a></dd>
+            </div>
+            <div>
+              <dt data-i18n="contact.phoneLabel">Phone / WhatsApp</dt>
+              <dd><a href="tel:+862133820861">021-33820861</a></dd>
+            </div>
+            <div>
+              <dt data-i18n="contact.faxLabel">Fax</dt>
+              <dd>021-33820861</dd>
+            </div>
+            <div>
+              <dt data-i18n="contact.personLabel">Contact Person</dt>
+              <dd data-i18n="contact.personValue">Mr.Wang</dd>
+            </div>
+          </dl>
+        </div>
+
+        <form class="inquiry-form" id="inquiry-form" novalidate>
+          <div class="form-row">
+            <label for="name" data-i18n="form.name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="company" data-i18n="form.company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="form-row">
+            <label for="email" data-i18n="form.email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="country" data-i18n="form.country">Country / Region</label>
+            <input id="country" name="country" type="text" autocomplete="country-name">
+          </div>
+          <div class="form-row">
+            <label for="interest" data-i18n="form.interest">Product Interest</label>
+            <select id="interest" name="interest"></select>
+          </div>
+          <div class="form-row full">
+            <label for="message" data-i18n="form.message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn primary" type="submit" data-i18n="form.submit">Submit Inquiry</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home">
+          <span class="brand-mark"><img src="assets/company-logo.svg" alt=""></span>
+          <span class="brand-text" data-i18n="brandName">Shanghai Shengjin Enterprise Co., Ltd.</span>
+        </a>
+        <p data-i18n="footer.brief">A B2B supplier of activated carbon and filtration materials for industrial purification and environmental treatment projects.</p>
+      </div>
+      <div>
+        <h3 data-i18n="footer.quickLinks">Quick Links</h3>
+        <a href="#company" data-i18n="nav.company">Company Profile</a>
+        <a href="#products" data-i18n="nav.products">Products</a>
+        <a href="#catalog" data-i18n="nav.catalog">E-Catalog</a>
+        <a href="#applications" data-i18n="nav.applications">Applications</a>
+        <a href="#certificate" data-i18n="nav.certificate">Certificate</a>
+        <a href="#contact" data-i18n="nav.contact">Contact Us</a>
+      </div>
+      <div>
+        <h3 data-i18n="footer.categories">Product Categories</h3>
+        <div id="footer-products"></div>
+      </div>
+      <div>
+        <h3 data-i18n="footer.contact">Contact</h3>
+        <p><a href="mailto:xszhao163@163.com">xszhao163@163.com</a></p>
+        <p><a href="tel:+862133820861">021-33820861</a></p>
+        <label class="footer-language">
+          <span data-i18n="languageLabel">Language</span>
+          <select id="footer-language-select" aria-label="Footer language">
+            <option value="en">English</option>
+            <option value="zh">简体中文</option>
+            <option value="ko">한국어</option>
+            <option value="ja">日本語</option>
+          </select>
+        </label>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p data-i18n="footer.copyright">© 2026 Shanghai Shengjin Enterprise Co., Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
